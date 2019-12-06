@@ -1,5 +1,4 @@
-"""Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:"""
-
+# Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:
 >>> 'spam eggs'  # single quotes
 'spam eggs'
 >>> 'doesn\'t'  # use \' to escape the single quote...
@@ -15,7 +14,7 @@
 >>> '"Isn\'t," they said.'
 '"Isn\'t," they said.'
 
-"""In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print() function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters:"""
+# In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print() function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters:
 
 >>> print('"Isn\'t," they said.')
 "Isn't," they said.
@@ -26,7 +25,7 @@
 First line.
 Second line.
 
-"""If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:"""
+# If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
 
 >>> print('C:\some\name')  # here \n means newline!
 C:\some
@@ -34,7 +33,7 @@ ame
 >>> print(r'C:\some\name')  # note the r before the quote
 C:\some\name
 
-"""String literals can span multiple lines. One way is using triple-quotes: ""..."" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line. The following example:"""
+# String literals can span multiple lines. One way is using triple-quotes: ""..."" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line. The following example:
 
 print("""\
 Usage: thingy [OPTIONS]
@@ -42,24 +41,24 @@ Usage: thingy [OPTIONS]
      -H hostname               Hostname to connect to
 """)
 
-"""produces the following output (note that the initial newline is not included):"""
+# produces the following output (note that the initial newline is not included):
 
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
 
-"""Strings can be concatenated (glued together) with the + operator, and repeated with *:"""
+# Strings can be concatenated (glued together) with the + operator, and repeated with *:
 
 >>> # 3 times 'un', followed by 'ium'
 >>> 3 * 'un' + 'ium'
 'unununium'
 
-"""Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated."""
+# Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.
 
 >>> 'Py' 'thon'
 'Python'
 
-"""This feature is particularly useful when you want to break long strings:"""
+# This feature is particularly useful when you want to break long strings:
 
 >>> text = ('Put several strings within parentheses '
 ...         'to have them joined together.')
